@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+       <link rel="stylesheet" href="index.css">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    </head>
+    <main>
+    <header>
+       
+    <div class="restaurant-name">
+        <h1>Jimmy's dinner</h1>
+       <p>The best bergers in the town</p>
+    </div>
+    </header>
+    <div class="container" id="container">    
+    </div>
+    <div class="" id="bill">
+</div>
+<div class="card hidden" id="card" data-dontRemove="dont-remove">
+    <h2>Enter card details</h2>
+    <div class="card-inner">
+    <form id="order-form" class="order-form">
+       <input type="text" name="fulName" placeholder="Enter your full name" required>
+       <!-- The input element for the credit card number -->
+       <input type="tel" name="cardNumber" id="cardNumber" placeholder="Enter your card number" pattern="[0-9\s]{13,19}" maxlength="19" required>
+         <!-- The input element for the CVV -->
+    <input type="tel" name="cardCVV" id="cardCVV" placeholder="CVV" pattern="[0-9]{3}" maxlength="3" required>
+       <button type="submit" class="submit-btn">Pay</button>
+    </form>
+</div>
+</div>
+    
+    </main>
+    <body>
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+

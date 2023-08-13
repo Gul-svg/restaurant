@@ -1,0 +1,242 @@
+body {
+    margin: 0;
+    font-family: 'Smythe', cursive;
+    box-sizing: border-box;
+} 
+
+header{
+    background: url(https://source.unsplash.com/KEZdWfYD-ow);
+    background-size: cover;
+    background-position: center;
+    height: 130px
+
+}
+.order-heading{
+    text-align: center;
+
+}
+
+
+.restaurant-name{
+    padding: 20px;
+    color: white;
+    text-align: start;
+}
+
+.item{
+   
+    border-bottom: 1px solid #D2D2D2;
+    padding: 20px 0 0 0;
+    width: 100%;
+    margin: 15px 0;
+   
+}
+.inner{
+    display: flex;
+    gap: 10px;
+    padding:20px;
+    justify-content: center;
+    align-items: center;
+}
+.item-details{
+   
+    color:red;
+}
+.item-details > h3,p{
+    margin: 8px;
+}
+.item-details > p{
+    color: green;
+}
+
+
+.gray{
+    color: #8B8B8B;
+}
+
+.emoji{
+    font-size: 70px;
+    margin:0;
+}
+
+.add-item-btn{
+    padding:20px;
+    border: 1px solid #DEDEDE;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
+    border-radius: 50%;
+    cursor:pointer;
+    margin-left: auto;
+    color: #3C3C3C;  
+}
+
+.hidden{
+    display: none;
+}
+
+/* .bill{
+    text-align:center;
+    color: black;
+} */
+
+.bill-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    
+}
+
+.black-line{
+    border-top: 2px solid black;
+    margin: 0 40px;
+    text-align: center;
+   
+}
+
+.order-list{
+    list-style-type: none;
+    
+
+}
+
+
+.font-bill-name{
+color: #0E0E0E;
+font-size: 28px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 85.714% */
+margin:0;
+
+
+}
+
+.font-bill-price{
+    color: #000;
+
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 120% */
+
+}
+
+.padding{
+  padding: 0 40px;
+}
+
+li{
+    margin: 0;
+    padding: 0;
+}
+
+.complete-order-btn{
+    display: block;
+    margin: 0 auto;
+ 
+
+    font-size: 16px;
+    padding: 1.125rem 10.9375rem 1.125rem 12.125rem;
+
+    border-radius: 3px;
+    background: #16DB99;
+
+/* shadow/sm */
+box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+
+   
+    
+}
+/* .col-flex{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} */
+
+.remove-tag{
+ color: #BBB;
+font-family: Verdana;
+font-size: 12px;
+font-style: normal;
+margin-left: 12px;
+cursor: pointer;
+}
+
+.card{
+width: 50%;
+max-height: 500px;
+box-sizing: border-box;
+border-radius: 3.89px;
+box-shadow: 1px 1px 500px  #E6E6E6,-1px -1px 500px  #E6E6E6;
+
+max-width: 800px;
+position: fixed;
+top: 0;
+bottom:0;
+right:0;
+left:0;
+margin:auto;
+background: #FFF;
+
+padding: 1.5rem 1rem 0.5rem 1rem;
+}
+.card > h2{
+    text-align:center;
+    color: #000;
+font-family: Verdana;
+
+line-height: 1.94494rem; /* 129.664% */
+}
+.card-inner{
+    margin: 2.5rem 0;
+    
+    
+}
+.order-form{
+    display:flex;
+    flex-direction:column;
+    gap: 20px;
+    justify-content: end;
+    align-items: center;
+   
+
+}
+
+input{
+ width: 90%;
+ padding: 20px;
+ box-sizing: border-box;
+
+
+border-radius: 3px;
+border: 1px solid #757575;
+}
+.submit-btn{
+    width: 90%;
+    border-radius: 3px;
+    background: #16DB99;
+    padding-top: 16px;
+    padding-bottom:16px;
+    margin-bottom: 30px;
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 850px) { 
+    .card {
+         width: 85%; 
+         /* padding: 1.5rem .5rem 0.5rem .5rem; */
+    } 
+    .complete-order-btn{
+        padding: 1rem 5rem;
+    }
+}
+
+/* @media screen and (max-width: 600px) {
+    .card{
+        margin-top: 50vh
+    }
+} */
