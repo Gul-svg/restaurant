@@ -13,37 +13,37 @@ header{
 }
 .order-heading{
     text-align: center;
+    color: #000;
+    font-size: 28px;
+    line-height: 16.8px; /* 60% */
 
 }
 
-
+header{
+    margin-bottom: 30px;
+}
 .restaurant-name{
     padding: 20px;
     color: white;
     text-align: start;
 }
 
-.item{
-   
-    border-bottom: 1px solid #D2D2D2;
-    padding: 20px 0 0 0;
-    width: 100%;
-    margin: 15px 0;
-   
-}
+
 .inner{
     display: flex;
     gap: 10px;
     padding:20px;
     justify-content: center;
     align-items: center;
+   
 }
 .item-details{
    
     color:red;
 }
+ 
 .item-details > h3,p{
-    margin: 8px;
+   margin:2px;
 }
 .item-details > p{
     color: green;
@@ -55,21 +55,26 @@ header{
 }
 
 .emoji{
-    font-size: 70px;
+    font-size: 60px;
     margin:0;
 }
 
 .add-item-btn{
-    padding:20px;
+    padding:12px;
     border: 1px solid #DEDEDE;
     text-align: center;
     background-color: transparent;
-    color: white;
-    font-size: 1rem;
+    
+    
     border-radius: 50%;
     cursor:pointer;
     margin-left: auto;
     color: #3C3C3C;  
+
+    color: #3C3C3C;
+text-align: center;
+font-family: Inter;
+font-size: 17px;
 }
 
 .hidden{
@@ -85,14 +90,23 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 5px;
    
     
+}
+.black-line, .gray-line{
+    margin: 0 30px;
+    text-align: center;
+}
+
+.gray-line{
+    border-top: 1px solid #393333;
+  
 }
 
 .black-line{
     border-top: 2px solid black;
-    margin: 0 40px;
-    text-align: center;
+   
    
 }
 
@@ -106,9 +120,8 @@ header{
 .font-bill-name{
 color: #0E0E0E;
 font-size: 28px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 85.714% */
+
+line-height: 16px; /* 85.714% */
 margin:0;
 
 
@@ -116,11 +129,11 @@ margin:0;
 
 .font-bill-price{
     color: #000;
-
 font-size: 20px;
 font-style: normal;
 font-weight: 400;
 line-height: 24px; /* 120% */
+
 
 }
 
@@ -136,11 +149,12 @@ li{
 .complete-order-btn{
     display: block;
     margin: 0 auto;
- 
-
+     color: white;
+    border: none;
     font-size: 16px;
-    padding: 1.125rem 10.9375rem 1.125rem 12.125rem;
-
+    margin-top: 25px;
+    padding: 1rem 12rem 1rem 12rem;
+    
     border-radius: 3px;
     background: #16DB99;
 
@@ -162,17 +176,17 @@ box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
 font-family: Verdana;
 font-size: 12px;
 font-style: normal;
-margin-left: 12px;
+margin-left: 5px;
 cursor: pointer;
 }
 
 .card{
 width: 50%;
-max-height: 500px;
+max-height: 450px;
 box-sizing: border-box;
 border-radius: 3.89px;
-box-shadow: 1px 1px 500px  #E6E6E6,-1px -1px 500px  #E6E6E6;
-
+box-shadow: 1px 1px 500px  #696969,-1px -1px 500px  #696969;
+box-sizing: border-box;
 max-width: 800px;
 position: fixed;
 top: 0;
@@ -181,33 +195,42 @@ right:0;
 left:0;
 margin:auto;
 background: #FFF;
-
-padding: 1.5rem 1rem 0.5rem 1rem;
+box-sizing: border-box;
+padding: 1.5rem 1rem 0 1rem;
+}
+.change-font{
+    font-family: Verdana;
 }
 .card > h2{
     text-align:center;
     color: #000;
-font-family: Verdana;
+    font-size:20px;
 
-line-height: 1.94494rem; /* 129.664% */
+margin:0;
+line-height: 1rem; /* 129.664% */
 }
 .card-inner{
-    margin: 2.5rem 0;
+   
+   margin-top: 2.5rem;
     
-    
+   
+   
+
 }
 .order-form{
+    height: 100%;
+    
     display:flex;
     flex-direction:column;
-    gap: 20px;
-    justify-content: end;
-    align-items: center;
+    gap: 10px;
+    /* justify-content: end;
+    align-items: center; */
    
 
 }
 
 input{
- width: 90%;
+ width: 100%;
  padding: 20px;
  box-sizing: border-box;
 
@@ -216,22 +239,55 @@ border-radius: 3px;
 border: 1px solid #757575;
 }
 .submit-btn{
-    width: 90%;
+    width: 100%;
     border-radius: 3px;
     background: #16DB99;
     padding-top: 16px;
     padding-bottom:16px;
-    margin-bottom: 30px;
-    margin-top: 40px;
+    
+    margin: 15px auto;
+    
+   
+}
+.thank-you-container{
+    margin: 0 auto;
+   
+    padding:50px;
+    background-color: green;
+    text-align: center;
+    margin:0 auto;
+    border-radius: 3px;
+    background-color: #ECFDF5;
+    
+}
+.thank-you-message{
+    color: #065F46;
+font-family: Smythe;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 16.8px; /* 52.5% */
+text-align:center;
+
+margin:0;
+margin-top: 15px;
+margin-right: 24px;
+margin-left: 24px;
+padding:30px 50px;
+background-color: #ECFDF5;
 }
 
 @media screen and (max-width: 850px) { 
     .card {
-         width: 85%; 
+         width: 90%; 
+         height: 50vh
          /* padding: 1.5rem .5rem 0.5rem .5rem; */
     } 
     .complete-order-btn{
         padding: 1rem 5rem;
+    }
+    .thank-you-container{
+        
     }
 }
 

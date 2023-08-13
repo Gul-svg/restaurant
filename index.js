@@ -4,7 +4,7 @@ let billArr = []
 import { v4 as uuidv4 } from 'https://jspm.dev/uuid';
 
 
-
+const orderForm = document.getElementById('order-form')
 const container = document.getElementById("container")
 const card = document.getElementById("card");
 let totalPrice = 0
@@ -12,6 +12,7 @@ document.addEventListener('click', function (e) {
   const itemId = e.target.dataset.id
   if (itemId) {
     document.getElementById("bill").classList.remove('hidden')
+    document.getElementById("order-heading").classList.remove('hidden')
     calculateBill(Number(itemId))
 
 
@@ -42,7 +43,20 @@ document.addEventListener('click', function (e) {
       // Hide the card element
      card.classList.add('hidden')
     }
+    if(billArr.length===0){
+          document.getElementById("order-heading").classList.add('hidden')
+    }
  
+})
+orderForm.addEventListener('submit', function(e){
+  e.preventDefault()
+  const formData = new FormData(orderForm)
+  const fullName = formData.get('fulName')
+  document.getElementById("order-heading").classList.add('hidden')
+  document.getElementById('bill').innerHTML = `
+  
+  <h4 class="thank-you-message">Thanks, ${fullName}! your order is on its way!</h4>
+  `
 })
 function makeCard(){
   
@@ -95,8 +109,8 @@ function render() {
 
   menuArray.forEach(function (element) {
     let ingredientHtml = ''
-    element.ingredients.forEach(function (e) {
-      ingredientHtml += `<span class= "gray"> ${e} </span>`
+    element.ingredients.forEach(function (ingredient) {
+      ingredientHtml += `<span class= "gray"> ${ingredient} </span>`
     })
 
     feedHtml += `<div class="item">
@@ -110,7 +124,7 @@ function render() {
                             <button class="add-item-btn" data-id="${element.id}">+</button>
                       </div>
                  </div>
-               
+                 <div class="gray-line"></div>
                  
                  `
   })
@@ -118,7 +132,7 @@ function render() {
 
 
 
-  container.innerHTML = feedHtml + `<h3 class="order-heading">Your order</h3>`
+  container.innerHTML = feedHtml + `<h3 class="order-heading hidden" id="order-heading">Your order</h3>`
 }
 function appendBill() {
   let billHtml = ''
@@ -127,7 +141,7 @@ function appendBill() {
     billHtml += `<div class="bill-flex padding">
                         <h3 class="font-bill-name">${element.name} <span class=" remove-tag" id="remove-el-${element.id}" data-remove ="${element.id}">remove</span> </h3>
                         <p class="font-bill-price">$${element.price}</p>
-       </div>`
+                  </div>`
 
   })
   document.getElementById('bill').innerHTML = billHtml + totalPriceEL()
