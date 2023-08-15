@@ -11,6 +11,9 @@ header{
     height: 130px
 
 }
+.restaurant-name > h1{
+    margin:0;
+}
 .order-heading{
     text-align: center;
     color: #000;
@@ -72,9 +75,9 @@ header{
     color: #3C3C3C;  
 
     color: #3C3C3C;
-text-align: center;
-font-family: Inter;
-font-size: 17px;
+    text-align: center;
+    font-family: Inter;
+    font-size: 17px;
 }
 
 .hidden{
@@ -129,10 +132,10 @@ margin:0;
 
 .font-bill-price{
     color: #000;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 24px; /* 120% */
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 120% */
 
 
 }
@@ -145,24 +148,24 @@ li{
     margin: 0;
     padding: 0;
 }
+.order-btn-container{
+    width: 100%;
+    padding: 0 40px;
+    text-align:center;
+    box-sizing: border-box;
+    margin-top: 15px;
+}
 
 .complete-order-btn{
-    display: block;
-    margin: 0 auto;
-     color: white;
-    border: none;
-    font-size: 16px;
-    margin-top: 25px;
-    padding: 1rem 12rem 1rem 12rem;
-    
-    border-radius: 3px;
-    background: #16DB99;
-
-/* shadow/sm */
-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
-
-   
-    
+        width: 100%;
+        color: white;
+        border: none;
+        font-size: 16px;
+        padding: 1rem 12rem 1rem 12rem;
+        border-radius: 3px;
+        background: #16DB99;
+        box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);   
+        
 }
 /* .col-flex{
     display: flex;
@@ -172,31 +175,31 @@ box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.05);
 } */
 
 .remove-tag{
- color: #BBB;
-font-family: Verdana;
-font-size: 12px;
-font-style: normal;
-margin-left: 5px;
-cursor: pointer;
+    color: #BBB;
+    font-family: Verdana;
+    font-size: 12px;
+    font-style: normal;
+    margin-left: 5px;
+    cursor: pointer;
 }
 
 .card{
-width: 50%;
-max-height: 450px;
-box-sizing: border-box;
-border-radius: 3.89px;
-box-shadow: 1px 1px 500px  #696969,-1px -1px 500px  #696969;
-box-sizing: border-box;
-max-width: 800px;
-position: fixed;
-top: 0;
-bottom:0;
-right:0;
-left:0;
-margin:auto;
-background: #FFF;
-box-sizing: border-box;
-padding: 1.5rem 1rem 0 1rem;
+    width: 50%;
+    max-height: 450px;
+    box-sizing: border-box;
+    border-radius: 3.89px;
+    box-shadow: 1px 1px 500px  #696969,-1px -1px 500px  #696969;
+    box-sizing: border-box;
+    max-width: 800px;
+    position: fixed;
+    top: 0;
+    bottom:0;
+    right:0;
+    left:0;
+    margin:auto;
+    background: #FFF;
+    box-sizing: border-box;
+    padding: 1.5rem 1rem 0 1rem;
 }
 .change-font{
     font-family: Verdana;
@@ -262,19 +265,19 @@ border: 1px solid #757575;
 }
 .thank-you-message{
     color: #065F46;
-font-family: Smythe;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 16.8px; /* 52.5% */
-text-align:center;
+    font-family: Smythe;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16.8px; /* 52.5% */
+    text-align:center;
 
-margin:0;
-margin-top: 15px;
-margin-right: 24px;
-margin-left: 24px;
-padding:30px 50px;
-background-color: #ECFDF5;
+    margin:0;
+    margin-top: 15px;
+    margin-right: 24px;
+    margin-left: 24px;
+    padding:30px 50px;
+    background-color: #ECFDF5;
 }
 
 @media screen and (max-width: 850px) { 

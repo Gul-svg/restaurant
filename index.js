@@ -1,6 +1,6 @@
 import { menuArray } from '/data.js'
 let billArr = []
-
+//TODO: CODE REFACTOR
 import { v4 as uuidv4 } from 'https://jspm.dev/uuid';
 
 
@@ -8,14 +8,13 @@ const orderForm = document.getElementById('order-form')
 const container = document.getElementById("container")
 const card = document.getElementById("card");
 let totalPrice = 0
+
 document.addEventListener('click', function (e) {
   const itemId = e.target.dataset.id
   if (itemId) {
     document.getElementById("bill").classList.remove('hidden')
     document.getElementById("order-heading").classList.remove('hidden')
     calculateBill(Number(itemId))
-
-
     appendBill()
 
   }
@@ -156,7 +155,10 @@ function totalPriceEL() {
    <p class="font-bill-price">$${totalPrice}</p>
    
 </div>
+<div class= "order-btn-container">
 <button class="complete-order-btn" id="order-btn">Complete Order</button>
+</div>
+
 `
 
 
